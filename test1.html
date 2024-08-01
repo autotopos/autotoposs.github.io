@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>  
+  <link rel="shortcut icon" href="https://i.imgur.com/ewa2N7p.png" title="Favicon" >
+  <link type="text/css" id="dark-mode" rel="stylesheet" href="test1.css">
+  <style type="text/css" id="dark-mode-custom-style"></style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Confetti Animation</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <script src="test1.js"></script>
+      <script>
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 30000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+        start();
+        stop();
+      </script>
+  </body>  
+</html>
